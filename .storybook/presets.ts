@@ -1,16 +1,16 @@
-const path = require("path");
+const path = require('path');
 
 module.exports = [
   {
-    name: "@storybook/preset-typescript",
+    name: '@storybook/preset-typescript',
     options: {
       tsLoaderOptions: {
-        configFile: path.resolve(__dirname, "../tsconfig.json")
+        configFile: path.resolve(__dirname, '../tsconfig.json'),
       },
       tsDocgenLoaderOptions: {
-        tsconfigPath: path.resolve(__dirname, "../tsconfig.json")
+        tsconfigPath: path.resolve(__dirname, '../tsconfig.json'),
       },
-      include: [path.resolve(__dirname, "../src")]
-    }
-  }
+      include: [path.resolve(__dirname, '../src')],
+    },
+  },
 ];
